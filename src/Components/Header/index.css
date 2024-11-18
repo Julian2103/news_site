@@ -1,0 +1,123 @@
+.rectangle {
+   width: max-content;
+   padding: 7px 10px;
+   background: linear-gradient(#4d0ac7, #912ef2);
+   width: 48px;
+   aspect-ratio: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+}
+
+.visuall_mobile {
+   width: 50px;
+   aspect-ratio: 1;
+   flex-shrink: 0;
+   display: none;
+}
+.visuall_mobile img {
+   width: 100%;
+}
+
+.wrapper-header {
+   display: flex;
+   height: max-content;
+   justify-content: space-between;
+   background-color: #45444b;
+   align-items: center;
+   padding-inline: 32px;
+}
+.wrapper-header.lightWrapper {
+   background-color: white;
+}
+.info {
+   display: flex;
+   align-items: center;
+   padding-block: 20px;
+   column-gap: 15px;
+   border-left: 1px solid black;
+   padding-left: 10px;
+}
+.inner-search-input {
+   margin-left: auto;
+   display: flex;
+}
+.search_button {
+   flex-shrink: 0;
+
+   border: none;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+   background-color: transparent;
+   padding: 5px 5px;
+   cursor: pointer;
+}
+.input_search {
+   background-color: transparent;
+   margin-right: 10px;
+   display: none;
+}
+.input_search::-webkit-input-placeholder {
+   /* WebKit browsers */
+   color: black;
+}
+.input_search.active {
+   display: block;
+}
+
+@media (max-width: 768px) {
+   .wrapper-header {
+      padding-inline: 20px;
+   }
+   .input_search {
+      max-width: 150px;
+   }
+}
+@media (max-width: 550px) {
+   .wrapper-logo-burger {
+      padding-block: 20px;
+      width: 100%;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-between;
+   }
+   .wrapper-header {
+      flex-direction: column;
+      align-items: start;
+      padding-inline: 20px;
+   }
+   .visuall_mobile {
+      display: block;
+   }
+   .hidden_mobile {
+      display: none;
+   }
+   .inner-search-input {
+      width: 100%;
+      order: 2;
+      margin-left: 0;
+      justify-content: space-between;
+      padding-block: 25px;
+   }
+   .info {
+      border-left: none;
+      order: 1;
+      width: 100%;
+   }
+   .search_button {
+      order: 1;
+      margin-left: auto;
+   }
+   .input_search {
+      width: 100%;
+      max-width: none;
+      border: none;
+   }
+}

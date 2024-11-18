@@ -1,0 +1,22 @@
+
+@font-face {
+   font-family: "Inter";
+   src: url("./assets/fonts/Inter18pt-SemiBold.woff2");
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+body {
+   font-family: "Inter";
+   color: white;
+
+}
+.page {
+   overflow: hidden;
+   max-width: 1200px;
+   margin-inline: auto;
+   display: flex;
+   flex-direction: column;
+   min-height: calc(100vh - 88px);
+   padding-inline: 40px;
+}

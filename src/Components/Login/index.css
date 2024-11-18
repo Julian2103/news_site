@@ -1,0 +1,43 @@
+.login-wrapper {
+   max-width: 620px;
+   width: 100%;
+   row-gap: 40px;
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   margin-inline: auto;
+   border-radius: 15px;
+   margin-bottom: 152px;
+}
+.login-wrapper input {
+   padding: 18px 0px 18px 20px;
+   height: 55px;
+   border: 1px solid #57565d;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.login-wrapper p {
+   margin-bottom: 10px;
+}
+.sing-in-up-btn {
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   padding-block: 15px;
+   background-color: #6c1bdb;
+   color: white;
+   margin-bottom: 24px;
+   cursor: pointer;
+}
+@media (max-width: 768px) {
+   .login-wrapper {
+      margin-bottom: 110px;
+   }
+}
+
+@media (max-width: 550px) {
+   .login-wrapper {
+      margin-bottom: 56px;
+   }
+}

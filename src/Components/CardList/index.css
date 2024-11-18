@@ -1,0 +1,23 @@
+.cardWrapper {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   margin-top: 64px;
+   gap:35px;
+   margin-bottom: 72px;
+   
+
+}
+@media (max-width:970px) {
+   .cardWrapper{
+      grid-template-columns: repeat(2,1fr);
+      column-gap:20px;
+      justify-content: center;
+   }
+}
+@media (max-width:550px) {
+   .cardWrapper{
+      grid-template-columns: repeat(1,1fr);
+      
+      column-gap:20px;
+   }
+}

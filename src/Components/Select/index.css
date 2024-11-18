@@ -1,0 +1,51 @@
+/* Обертка для компонента */
+.wrapper-select {
+
+   margin-top: 65px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   max-height:56px ;
+   background-color: rgb(70, 69, 69);
+   padding: 15px 20px;
+   border-radius: 10px;
+   outline: none;
+}
+
+
+/* Метка для select */
+.select-label {
+   color: #999292;
+   font-size: 14px;
+}
+
+/* Стили для select */
+.select-dropdown {
+   background-color: rgb(70, 69, 69); /* Цвет фона */
+   color: #fff; /* Цвет текста */
+   cursor: pointer;
+   width: 150px;
+   border: none;
+}
+
+/* Добавление стрелки справа */
+
+/* Стиль при фокусе */
+.wrapper-select:focus {
+   outline: 2px solid #6b4ce6;
+   outline-offset: 2px;
+}
+
+/* Стили для активной опции (на случай поддержки стилизации) */
+.select-dropdown option {
+   background-color: #333;
+   color: #fff;
+}
+@media (max-width:970px) {
+   .select-dropdown{
+      max-width: 100px;
+   }
+   .wrapper-select{
+      margin-top: 0;
+   }
+}

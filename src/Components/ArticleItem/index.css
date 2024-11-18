@@ -1,0 +1,57 @@
+.itemWrapper {
+   cursor: pointer;
+   max-width: 352px;
+   min-height: 100%;
+   justify-self: center;
+   display: flex;
+   flex-direction: column;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.wrapperDate {
+   flex-grow: 1;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: rgb(71, 69, 69);
+}
+.light {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 32px;
+   background-color: white;
+}
+.isLightParagraph {
+   color: black;
+}
+
+ .card-gradientWrapper{
+   position: relative;
+   display: flex;
+ }
+ .card-gradientWrapper img{
+   flex-grow: 1;
+ }
+.card-gradient {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(135deg, #4D0AC7 , #912EF2);
+   opacity: 0.6;
+   transition: opacity 0.3s ease;
+   
+}
+.itemWrapper:hover .card-gradient{
+   opacity: 0;
+}
+.hDark{
+   color:black;
+}
+.hLight{
+   color:white;
+}
